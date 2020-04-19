@@ -78,16 +78,16 @@
                     <p class="categoria">Educacion IT</p>
                   </div>
                 </div>
-                <!-- <div class="trabajo">
+                <div id="cert5-div" class="trabajo">
                     <div class="thumb">
-                      <a href="#"><img src="img/Trabajos/5.jpg" alt=""></a>
+                      <a id="cert5" href="#"><img src="img/certificates/diploma-bootstrap-1.png" alt=""></a>
                     </div>
                     <div class="descripcion">
-                      <p class="nombre">lorem ipsum</p>
-                      <p class="categoria">HTML-CSS-PHP</p>
+                      <p class="nombre">Curso de Bootstrap</p>
+                      <p class="categoria">Platzi</p>
                     </div>
                   </div>
-                  <div class="trabajo">
+                  <!-- <div class="trabajo">
                       <div class="thumb">
                        <a href="#"> <img src="img/Trabajos/6.jpg" alt=""></a>
                       </div>
@@ -167,6 +167,12 @@ $('#cert4').click(function(){
   captionText.innerHTML = this.alt;
 });
 
+$('#cert5').click(function(){
+  $('#modalimgs').show();
+  $('#img01').attr('src','img/certificates/diploma-bootstrap-1.png');
+  captionText.innerHTML = this.alt;
+});
+
 $('#close').click (function(){
   $('#modalimgs').fadeOut(200 );
 });
@@ -185,13 +191,16 @@ $('#Filter').change(function(){
     $('#cert2-div').fadeIn(100);
     $('#cert3-div').fadeIn(100);
     $('#cert4-div').fadeIn(100);
+    $('#cert5-div').fadeIn(100);
     break;
     case '1':
     $('#contenedor-trabajos').addClass('space');
     $('#cert1-div').fadeOut(100);
+    $('#cert5-div').fadeOut(100);
+    $('#cert4-div').fadeOut(100);
     $('#cert2-div').fadeIn(100);
     $('#cert3-div').fadeIn(100);
-    $('#cert4-div').fadeOut(100);
+    
     break;
     case '2':
     $('#contenedor-trabajos').addClass('space');
@@ -199,6 +208,7 @@ $('#Filter').change(function(){
     $('#cert2-div').fadeOut(100);
     $('#cert3-div').fadeOut(100);
     $('#cert4-div').fadeOut(100);
+    $('#cert5-div').fadeOut(100);
     break;
     case '3':
     $('#contenedor-trabajos').addClass('space');
@@ -206,12 +216,14 @@ $('#Filter').change(function(){
     $('#cert2-div').fadeOut(100);
     $('#cert3-div').fadeOut(100);
     $('#cert4-div').fadeOut(100);
+    $('#cert5-div').fadeIn(100);
     break;
     case '4':
     $('#contenedor-trabajos').addClass('space');
     $('#cert1-div').fadeOut(100);
     $('#cert2-div').fadeOut(100);
     $('#cert3-div').fadeOut(100);
+    $('#cert5-div').fadeOut(100);
     $('#cert4-div').fadeIn(100);
     break;
 
