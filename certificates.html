@@ -1,0 +1,222 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="CSS/085 Normalize-CSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/certificates.css">
+  
+  <title>Portafolio Joaquin Villamediana</title>
+</head>
+<body>
+  <header>
+    <div style="  margin: auto;max-width: 1500px;" class="contenedor">
+      <nav class="menu">
+        <a href="index.html">Back to site</a>
+      </nav>
+      
+    </div>
+  </header>
+  <section class="main">
+    <section id="about" class="acerca-de">
+      <div class="contenedor">
+        
+
+        
+    </div>
+    </section>
+    <section id="works" class="trabajos">
+      <div class="contenedor">
+        <h3 class="titulo">Certificaciones</h3>
+        <label for="Filter">Filtrar por:</label>
+        <select style="margin-bottom: 20px;" name="Filter" id="Filter">
+          <option selected value="0">All</option>
+          <option value="1">Linux</option>
+          <option value="2">Backend</option>
+          <option value="3">Frontend</option>
+          <option value="4">SQL</option>
+        </select>
+        <div id="contenedor-trabajos" class="contenedor-trabajos">
+          <div id="cert1-div" class="trabajo">
+            <div class="thumb">
+             <a id="cert1" href="#"> <img src="img/certificates/diploma-api-rest-1.png" alt=""></a>
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Curso de API REST</p>
+              <p class="categoria">Platzi</p>
+            </div>
+          </div>
+          <div id="cert2-div" class="trabajo">
+              <div class="thumb">
+                <a id="cert2" href="#"><img src="img/certificates/Certificate_of_Attendance_(RH124)-1.png" alt=""></a>
+              </div>
+              <div class="descripcion">
+                <p class="nombre">Red Hat Administration I</p>
+                <p class="categoria">Red Hat</p>
+              </div>
+            </div>
+            <div id="cert3-div" class="trabajo">
+                <div class="thumb">
+                 <a id="cert3" href="#"> <img src="img/certificates/Certificate_of_Attendance_(RH134)-1.png" alt=""></a>
+                </div>
+                <div class="descripcion">
+                  <p class="nombre">Red Hat Administration II</p>
+                  <p class="categoria">Red Hat</p>
+                </div>
+              </div>
+              <div id="cert4-div" class="trabajo">
+                  <div class="thumb">
+                    <a id="cert4" href="#"><img src="img/certificates/sql.png" alt=""></a>
+                  </div>
+                  <div class="descripcion">
+                    <p class="nombre">Introduccion a Base de Datos y SQL</p>
+                    <p class="categoria">Educacion IT</p>
+                  </div>
+                </div>
+                <!-- <div class="trabajo">
+                    <div class="thumb">
+                      <a href="#"><img src="img/Trabajos/5.jpg" alt=""></a>
+                    </div>
+                    <div class="descripcion">
+                      <p class="nombre">lorem ipsum</p>
+                      <p class="categoria">HTML-CSS-PHP</p>
+                    </div>
+                  </div>
+                  <div class="trabajo">
+                      <div class="thumb">
+                       <a href="#"> <img src="img/Trabajos/6.jpg" alt=""></a>
+                      </div>
+                      <div class="descripcion">
+                        <p class="nombre">lorem ipsum</p>
+                        <p class="categoria">HTML-CSS-PHP</p>
+                      </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                         <a href="#"> <img src="img/Trabajos/7.jpg" alt=""></a>
+                        </div>
+                        <div class="descripcion">
+                          <p class="nombre">lorem ipsum</p>
+                          <p class="categoria">HTML-CSS-PHP</p>
+                        </div>
+                      </div>
+                      <div class="trabajo">
+                          <div class="thumb">
+                           <a href="#"> <img src="img/Trabajos/8.jpg" alt=""></a>
+                          </div>
+                          <div class="descripcion">
+                            <p class="nombre">Proyectos Embebidos</p>
+                            <p class="categoria">Lenguaje C</p>
+                          </div>
+                        </div> -->
+        </div>
+      </div>
+    </section>
+
+
+
+  </section>
+<footer>
+  <section class="redes">
+    <div class="contenedor">
+      <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#" class="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href="#" class="github"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+    </div>
+  </section>
+</footer>
+
+<div id="modalimgs" class="modal">
+  <span id="close" class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+<script src="js/jquery-3.5.0.min.js"></script>
+<script>
+$('#cert1').click(function(){
+  $('#modalimgs').show();
+  $('#img01').attr('src','img/certificates/diploma-api-rest-1.png');
+  captionText.innerHTML = this.alt;
+});
+
+$('#cert2').click(function(){
+  $('#modalimgs').show();
+  $('#img01').attr('src','img/certificates/Certificate_of_Attendance_(RH124)-1.png');
+  captionText.innerHTML = this.alt;
+});
+
+$('#cert3').click(function(){
+  $('#modalimgs').show();
+  $('#img01').attr('src','img/certificates/Certificate_of_Attendance_(RH134)-1.png');
+  captionText.innerHTML = this.alt;
+});
+
+$('#cert4').click(function(){
+  $('#modalimgs').show();
+  $('#img01').attr('src','img/certificates/sql.png');
+  captionText.innerHTML = this.alt;
+});
+
+$('#close').click (function(){
+  $('#modalimgs').fadeOut(200 );
+});
+
+$('#Filter').change(function(){
+  var opt = $('#Filter').val();
+  
+  switch(opt)
+  {
+    default:
+    alert('Opcion no valida');
+    break;
+    case '0':
+    $('#contenedor-trabajos').removeClass('space');
+    $('#cert1-div').fadeIn(100);
+    $('#cert2-div').fadeIn(100);
+    $('#cert3-div').fadeIn(100);
+    $('#cert4-div').fadeIn(100);
+    break;
+    case '1':
+    $('#contenedor-trabajos').addClass('space');
+    $('#cert1-div').fadeOut(100);
+    $('#cert2-div').fadeIn(100);
+    $('#cert3-div').fadeIn(100);
+    $('#cert4-div').fadeOut(100);
+    break;
+    case '2':
+    $('#contenedor-trabajos').addClass('space');
+    $('#cert1-div').fadeIn(100);
+    $('#cert2-div').fadeOut(100);
+    $('#cert3-div').fadeOut(100);
+    $('#cert4-div').fadeOut(100);
+    break;
+    case '3':
+    $('#contenedor-trabajos').addClass('space');
+    $('#cert1-div').fadeOut(100);
+    $('#cert2-div').fadeOut(100);
+    $('#cert3-div').fadeOut(100);
+    $('#cert4-div').fadeOut(100);
+    break;
+    case '4':
+    $('#contenedor-trabajos').addClass('space');
+    $('#cert1-div').fadeOut(100);
+    $('#cert2-div').fadeOut(100);
+    $('#cert3-div').fadeOut(100);
+    $('#cert4-div').fadeIn(100);
+    break;
+
+  }
+});
+</script>
+</body>
+</html>

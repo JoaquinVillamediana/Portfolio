@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="CSS/085 Normalize-CSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <title>Portafolio Joaquin Villamediana</title>
+</head>
+<body>
+  <header>
+    <div class="contenedor">
+      <nav class="menu">
+        <a onclick="scrollAbout()" href="#">Acerca de</a>
+        <a onclick="scrollWorks()" href="#">Trabajos</a>
+        <a onclick="scrollContact()" href="#">Contacto</a>
+      </nav>
+      <div class="contenedortexto">
+        <div class="texto">
+          <h1 class="nombre">Joaquin Villamediana</h1>
+          <h2 class="profesion">Desarrollador de Software</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="main">
+    <section id="about" class="acerca-de">
+      <div class="contenedor">
+        <div class="foto">
+          <img src="img/imagen.jpg" width="115" height="115" alt="Joaquin Villamediana">
+        </div>
+
+        <div class="texto">
+          <h3 class="titulo">Acerca de</h3>
+          <p>Mi nombre es <span class="bold">Joaquin Villamediana</span> y soy un desarrollador de software junior con conocimientos en <span class="bold">multiples plataformas y lenguajes.</span></p>
+        </div>
+    </div>
+    </section>
+    <section id="works" class="trabajos">
+      <div class="contenedor">
+        <h3 class="titulo">Trabajos</h3>
+        <div class="contenedor-trabajos">
+          <div class="trabajo">
+            <div class="thumb">
+             <a id="thumb_2" href="Layout_iOS/index.html"> <img src="img/Trabajos/1.jpg" alt=""></a>
+            </div>
+            <div class="descripcion">
+              <p class="nombre">Layout Web Page</p>
+              <p class="categoria">HTML-CSS</p>
+            </div>
+          </div>
+          <div class="trabajo">
+              <div class="thumb">
+                <a  href="https://github.com/JoaquinVillamediana/library_php"><img src="img/Trabajos/2.jpg" alt=""></a>
+              </div>
+              <div class="descripcion">
+                <p class="nombre">Sistema de Libreria</p>
+                <p class="categoria">PHP-CSS-BOOTSTRAP-JS</p>
+              </div>
+            </div>
+            <div class="trabajo">
+                <div class="thumb">
+                 <a onclick="alert_Err()" href="#"> <img src="img/Trabajos/3.jpg" alt=""></a>
+                </div>
+                <div class="descripcion">
+                  <p class="nombre">Aplicativos y Juegos</p>
+                  <p class="categoria">Lenguaje C</p>
+                </div>
+              </div>
+              <div class="trabajo">
+                  <div class="thumb">
+                    <a onclick="alert_Err()" href="#"><img src="img/Trabajos/4.jpg" alt=""></a>
+                  </div>
+                  <div class="descripcion">
+                    <p class="nombre">Aplicaciones Web</p>
+                    <p class="categoria">C++ .Net</p>
+                  </div>
+                </div>
+                <div class="trabajo">
+                    <div class="thumb">
+                      <a onclick="alert_Err()" href="#"><img src="img/Trabajos/5.jpg" alt=""></a>
+                    </div>
+                    <div class="descripcion">
+                      <p class="nombre">lorem ipsum</p>
+                      <p class="categoria">HTML-CSS-PHP</p>
+                    </div>
+                  </div>
+                  <div class="trabajo">
+                      <div class="thumb">
+                       <a href="https://github.com/JoaquinVillamediana/hangman_console"> <img src="img/Trabajos/6.jpg" alt=""></a>
+                      </div>
+                      <div class="descripcion">
+                        <p class="nombre">Hangman (Console game)</p>
+                        <p class="categoria">Python 3</p>
+                      </div>
+                    </div>
+                    <div class="trabajo">
+                        <div class="thumb">
+                         <a onclick="alert_Err()" href="#"> <img src="img/Trabajos/7.jpg" alt=""></a>
+                        </div>
+                        <div class="descripcion">
+                          <p class="nombre">lorem ipsum</p>
+                          <p class="categoria">HTML-CSS-PHP</p>
+                        </div>
+                      </div>
+                      <div class="trabajo">
+                          <div class="thumb">
+                           <a href="https://github.com/JoaquinVillamediana/security_case"> <img src="img/Trabajos/8.jpg" alt=""></a>
+                          </div>
+                          <div class="descripcion">
+                            <p class="nombre">Security Case</p>
+                            <p class="categoria">FREESCALE Proyect in C</p>
+                          </div>
+                        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificados">
+      <div class="contenedor">
+        <div class="contenedortitulo">
+        <h3 class="titulo">Certificaciones y Certificados de estudios</h3>
+      </div>
+      <div class="contenedoricono">
+        <a class="icono" href="certificates.html"><img src="img/arrow-point-to-right.png" alt=""></a>
+      </div>
+      </div>
+
+
+
+    </section>
+
+
+  </section>
+<footer>
+  <section id="contact" class="contacto">
+    <div class="contenedor">
+    
+      <h3 class="titulo">Contacto</h3>
+      <form action="" id="contactForm" class="formulario">
+        <input type="text" placeholder="Nombre" name="Nombre" required>
+        <input type="email" placeholder="Correo" name="Correo" required>
+        <textarea name="Mensaje" placeholder="Mensaje"></textarea>
+        <div id="msg" class="message" ><p></p></div>
+        <input type="submit" value="Enviar" class="boton">
+      </form>
+    </div>
+  </section>
+  <section class="redes">
+    <div class="contenedor">
+      <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#" class="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href="https://github.com/JoaquinVillamediana" class="github"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+    </div>
+  </section>
+</footer>
+<div id="id01" style="display: none;" class="modal">
+  <div class="modal-content">
+    <!-- <div class="container"> -->
+      <span class="close" onclick="$('#id01').fadeOut(200)">&times;</span>
+      <a onclick="$('#id01').hide()" id="page" style="display: block;" href="#">Ver Pagina.</a>
+      <a onclick="$('#id01').hide()" id="code" style="display: block;" href="#">Ver Codigo.</a>
+    <!-- </div> -->
+  </div>
+</div>
+<script src="js/jquery-3.5.0.min.js"></script>
+<script>
+function scrollAbout(){
+  $('html, body').animate({
+ scrollTop: $('#about').offset().top
+ }, 2000);
+}
+function scrollWorks(){
+  $('html, body').animate({
+ scrollTop: $('#works').offset().top
+ }, 2000);
+}
+function scrollContact(){
+  $('html, body').animate({
+ scrollTop: $('#contact').offset().top
+ }, 2000);
+}
+
+
+$(document).ready(function(){
+  $('#msg').hide();
+  $('#contactForm').submit(function(event){
+    
+    event.preventDefault();
+
+    $.ajax({
+			type: 'POST',
+			url: 'PHP/server.php',
+			data: $(this).serialize(),
+			success: function(data){
+        if(data == 'success')
+        {
+        $('#msg').show();
+        $('#msg').removeClass('red');
+        $('#msg').addClass('green');
+				$('#msg').first('p').text('Muchas gracias! a la brevedad se contactaran contigo');
+        }
+        if(data == 'error')
+        {
+          $('#msg').show();
+          $('#msg').removeClass('green');
+				$('#msg').addClass('red');
+				$('#msg').first('p').text('Lo sentimos, se produjo un error');
+        }
+			},
+			error: function(data){
+        $('#msg').show();
+				$('#msg').addClass('red');
+				$('#msg').first('p').text('Lo sentimos, se produjo un error');
+			}
+		});
+	
+
+
+  });
+
+});
+</script>
+
+<script>
+  $('#thumb_2').click(function(){ 
+    event.preventDefault();
+    $('#page').attr('href','Layout_iOS/index.html');
+    $('#code').attr('href','https://github.com/JoaquinVillamediana/page_layout_1');
+    $('#id01').fadeIn(200);
+  });
+  
+
+  function alert_Err(){
+    alert('Lo sentimos, esta funcion no esta disponible');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Alata', sans-serif;
+  background: #000 url('imagenes/fondo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header{
+  background: url('../img/bg4.png') #697a88;
+  background-repeat: no-repeat;
+  background-position-y: -205px;
+max-height: 1900px;
+height: 130px;
+border-bottom: 2px solid;
+}
+
+.header .menu{
+  margin: 40px 0;
+  text-align: right;
+}
+
+.header .menu a{
+  display: inline-block;
+  text-decoration: none;
+  border-bottom:2px solid transparent;
+  margin: 0 40px;
+  color: #000;
+  padding-bottom: 9px;
+  font-size: 1em;
+}
+
+.header .menu a:hover{
+  border-bottom:2px solid #000;
+}
+
+.contenedor-2{
+  margin: auto;
+  max-width: 1000px;
+    overflow: hidden; 
+}
+.contenedor{
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header{
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+header nav a{
+  color: #fff;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 18px;
+}
+
+header nav a:hover{
+  text-decoration: underline;
+}
+
+.main{
+  background-color: #fff;
+  padding: 20px;
+  width: 70%;
+}
+
+.main article .thumb{
+  margin-bottom: 20px;
+
+}
+
+.main article .thumb img{
+  width:100%;
+  vertical-align: top;
+}
+
+.main article h2{
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 32px;
+}
+.main article p{
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+aside{
+  width: 30%;
+  /* background-color: #537dca; */
+padding: 20px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+aside .ad{
+  font-size: 30px;
+  text-align: center;
+  padding: 50px 0;
+  /* background-color:#4264a2 ; */
+  /* margin-bottom: 20px; */
+}
+
+aside .ad img{
+  width: 100%;
+}
+
+footer{
+  margin-top: 20px;
+  background: rgba(255, 255, 255, .2);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+footer .redes a{
+  text-decoration: underline;
+  margin-left: 20px;
+  color: #fff;
+}
+
+footer .redes a:hover{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px){
+  .main{
+    width:100%;
+  }
+  aside{
+    width: 100%;
+    flex-direction: row;
+  }
+  aside .ad{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width:600px){
+  header{
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  header nav{
+    width: 100%;
+    background: rgba(255, 255, 255, .2);
+    text-align: center;
+    padding:20px
+  }
+  header .logo{
+    margin-bottom: 20px;
+  }
+
+  header nav a{
+    margin:0 20px;
+  }
+
+  footer{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .autor{
+    order: 2;
+  }
+
+  footer .redes{
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+
+
+}
+
+@media screen and (max-width:400px)
+{
+  aside{
+    display: none;
+  }
+
+}
