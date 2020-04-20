@@ -101,11 +101,11 @@
                     </div>
                     <div class="trabajo">
                         <div class="thumb">
-                         <a onclick="alert_Err()" href="#"> <img src="img/Trabajos/7.jpg" alt=""></a>
+                         <a id="thumb_7" onclick="" href="#"> <img src="img/Trabajos/7.jpg" alt=""></a>
                         </div>
                         <div class="descripcion">
-                          <p class="nombre">lorem ipsum</p>
-                          <p class="categoria">HTML-CSS-PHP</p>
+                          <p class="nombre">Layout Web Page</p>
+                          <p class="categoria">Bootstrap</p>
                         </div>
                       </div>
                       <div class="trabajo">
@@ -235,6 +235,13 @@ $(document).ready(function(){
     event.preventDefault();
     $('#page').attr('href','Layout_iOS/index.html');
     $('#code').attr('href','https://github.com/JoaquinVillamediana/page_layout_1');
+    $('#id01').fadeIn(200);
+  });
+
+  $('#thumb_7').click(function(){ 
+    event.preventDefault();
+    $('#page').attr('href','https://joaquinvillamediana.github.io/page_layout_2/');
+    $('#code').attr('href','https://github.com/JoaquinVillamediana/page_layout_2');
     $('#id01').fadeIn(200);
   });
   
