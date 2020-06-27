@@ -142,7 +142,7 @@
     <div class="contenedor">
     
       <h3 class="titulo">Contacto</h3>
-      <form action="" id="contactForm" class="formulario">
+      <form action="https://formspree.io/mgenlzoz" id="contactForm" method="POST" class="formulario">
         <input type="text" placeholder="Nombre" name="Nombre" required>
         <input type="email" placeholder="Correo" name="Correo" required>
         <textarea name="Mensaje" placeholder="Mensaje"></textarea>
@@ -196,38 +196,68 @@ $(document).ready(function(){
     
     event.preventDefault();
 
-    $.ajax({
-			type: 'POST',
-			url: 'PHP/server.php',
-			data: $(this).serialize(),
-			success: function(data){
-        if(data == 'success')
-        {
-        $('#msg').show();
-        $('#msg').removeClass('red');
-        $('#msg').addClass('green');
-				$('#msg').first('p').text('Muchas gracias! a la brevedad se contactaran contigo');
-        }
-        if(data == 'error')
-        {
-          $('#msg').show();
-          $('#msg').removeClass('green');
-				$('#msg').addClass('red');
-				$('#msg').first('p').text('Lo sentimos, se produjo un error');
-        }
-			},
-			error: function(data){
-        $('#msg').show();
-				$('#msg').addClass('red');
-				$('#msg').first('p').text('Lo sentimos, se produjo un error');
-			}
-		});
-	
+
+    //Uses Server.php
+
+    // $.ajax({
+		// 	type: 'POST',
+		// 	url: 'PHP/server.php',
+		// 	data: $(this).serialize(),
+		// 	success: function(data){
+    //     if(data == 'success')
+    //     {
+    //     $('#msg').show();
+    //     $('#msg').removeClass('red');
+    //     $('#msg').addClass('green');
+		// 		$('#msg').first('p').text('Muchas gracias! a la brevedad se contactaran contigo');
+    //     }
+    //     if(data == 'error')
+    //     {
+    //       $('#msg').show();
+    //       $('#msg').removeClass('green');
+		// 		$('#msg').addClass('red');
+		// 		$('#msg').first('p').text('Lo sentimos, se produjo un error');
+    //     }
+		// 	},
+		// 	error: function(data){
+    //     $('#msg').show();
+		// 		$('#msg').addClass('red');
+		// 		$('#msg').first('p').text('Lo sentimos, se produjo un error');
+		// 	}
+    // });
+    
+    //Uses formspree.io
+
+    var data = new FormData(contactForm);
+    ajax(contactForm.method, contactForm.action, data);
+      
 
 
   });
 
 });
+
+function ajax(method, url, data) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        $('#msg').show();
+         $('#msg').removeClass('red');
+         $('#msg').addClass('green');
+		 		$('#msg').first('p').text('Muchas gracias! a la brevedad se contactaran contigo');
+      } else {
+        $('#msg').show();
+				$('#msg').addClass('red');
+				$('#msg').first('p').text('Lo sentimos, se produjo un error');
+      }
+    };
+    xhr.send(data);
+  }
+
+
 </script>
 
 <script>
