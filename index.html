@@ -18,6 +18,7 @@
       <nav class="menu">
         <a onclick="scrollAbout()" href="#">Acerca de</a>
         <a onclick="scrollWorks()" href="#">Trabajos</a>
+        <a onclick="scrollStudies()" href="#">Estudios</a>
         <a onclick="scrollContact()" href="#">Contacto</a>
       </nav>
       <div class="contenedortexto">
@@ -121,7 +122,7 @@
       </div>
     </section>
 
-    <section class="certificados">
+    <section class="certificados" id="certifies">
       <div class="contenedor">
         <div class="contenedortitulo">
         <h3 class="titulo">Certificaciones y Certificados de estudios</h3>
@@ -186,6 +187,12 @@ function scrollWorks(){
 function scrollContact(){
   $('html, body').animate({
  scrollTop: $('#contact').offset().top
+ }, 2000);
+}
+
+function scrollStudies(){
+  $('html, body').animate({
+ scrollTop: $('#certifies').offset().top
  }, 2000);
 }
 
