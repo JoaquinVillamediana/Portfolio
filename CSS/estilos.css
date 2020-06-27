@@ -21,7 +21,7 @@ overflow: hidden;
 header{
   background: url('../img/bg4.png') #697a88;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 max-height: 1900px;
 }
 
